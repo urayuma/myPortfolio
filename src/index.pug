@@ -1,0 +1,305 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title I like pug!
+    link(rel="stylesheet" href="src/style.css")
+    link(rel="stylesheet" href="src/bootstrap.css")
+    link(rel="stylesheet" href="src/bootstrap.min.css")
+    link(rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css")
+    link(rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" href="../lib/fancybox/fancybox.css")
+    link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-buttons.css")
+    link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-thumbs.css")
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.js")
+    script(src="https://code.jquery.com/jquery-3.4.1.js")
+    //- script(type="text/javascript" src='/lib/jQuery/jquery.js')
+    //- script(type="text/javascript" src='/lib/jQuery/jquery.min.js')
+    script(type="text/javascript" src="http://localhost:3000//js/main.js")
+    script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.min.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/easing/easing.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/easing/easing.min.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/fancybox/fancybox.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-buttons.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-media.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-thumbs.js')
+    script(type='text/javascript' src='http://localhost:3000//lib/stellar/stellar.min.js')
+    //- script(type="text/javascript" acync src="https://www.google-analytics.com/analytics.js")
+    //- script(src="https://templatemag.com/demo/assets/js/jquery-3.1.0.min.js")
+    //- script(src="https://templatemag.com/demo/assets/js/custom.js")
+    //- script(async src="https://www.googletagmanager.com/gtag/js?id=UA-55234356-6")
+  body
+    nav#theMenu.menu
+      .menu-wrap
+        h1.logo
+          a.smoothscroll(href="#home") Studio
+        i.fa.fa-times.menu-close
+        a.smoothscroll(href="#home") Home
+        a.smoothscroll(href="#about") About
+        a.smoothscroll(href="#portfolio") Portfolio
+        a.smoothscroll(href="#services") Services
+        a.smoothscroll(href="#contact") Contact
+      #menuToggle
+        i.fa.fa-bars
+    section#home(name="home")
+    #headerwrap
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h1 Title Empty
+    section#about(name="about")
+    #aboutwrap
+      .container
+        .row
+          .col-lg-4.name
+            img.img-responsive(src="../img/human.jpg")
+            p My name
+            .name-label
+          .col-lg-8.name-desc
+            h2 海賊王に俺はなる
+              br
+              | javaScript&
+              br
+              | javaScript
+            .name-zig
+            .col-md-6
+              p Lorem Ipsum is simply dummy text of
+                br
+                |the printing and typesetting industry. Lorem Ipsum
+                br
+                |has been the industry's standard dummy text
+                br
+                |ever since the 1500s, when an unknown printer
+                br
+                |took a galley of type and scrambled it to make a
+                br
+                |type specimen book.
+              p It has survived not only five centuries, but also
+                br
+                |the leap into electronic typesetting, remaining
+                br
+                |essentially unchanged. It was popularised in the
+                br
+                |1960s with the release of Letraset sheets
+                br
+                |containing Lorem Ipsum passages, and more
+                br
+                |recently with desktop publishing software like
+                br
+                |Aldus PageMaker including versions of Lorem
+                br
+                |Ipsum.
+            .col-md-6
+              p Contrary to popular belief, Lorem Ipsum is not
+                br
+                |simply random text. It has roots in a piece of
+                br
+                |classical Latin literature from 45 BC, making it
+                br
+                |over 2000 years old.
+              p Richard McClintock, a Latin professor at
+                br
+                |Hampden-Sydney College in Virginia, looked up
+                br
+                |one of the more obscure Latin words,
+                br
+                |consectetur, from a Lorem Ipsum passage, and
+                br
+                |going through the cites of the word in classical
+                br
+                |literature, discovered the undoubtable source.
+    .sep.about(data-stellar-backgroud-ratio="0.5")(style="background-position: 50%;")
+    section#portfolio(name="portfolio")
+    #portfoliowrap
+      .container
+        .row
+          h1 成果物
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port01.jpg")
+                      img.img-responsive(src="../img/portfolio/port01.jpg" alt)
+                  .overlay
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port02.jpg")
+                      img.img-responsive(src="../img/portfolio/port02.jpg" alt)
+                  .overlay
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port03.jpg")
+                      img.img-responsive(src="../img/portfolio/port03.jpg" alt)
+                  .overlay
+        .row.mt
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port01.jpg")
+                      img.img-responsive(src="../img/portfolio/port01.jpg" alt)
+                  .overlay
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port02.jpg")
+                      img.img-responsive(src="../img/portfolio/port02.jpg" alt)
+                  .overlay
+          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+            .project-wrapper
+              .project
+                .photo-wrapper
+                  .photo
+                    a.fancybox(href="../img/portfolio/port03.jpg")
+                      img.img-responsive(src="../img/portfolio/port03.jpg" alt)
+                  .overlay
+      .container
+        .row.mt.centered
+          h1 MY DESIGB PROCESS
+          .col-lg-4.proc
+            i.fa.facoffee
+            h3 The Meeting
+            p Lorem Ipsum is simply dummy text of the printing
+              br
+              | and typesetting industry. Lorem Ipsum has been
+              br
+              | the industry's standard dummy text ever.
+          .col-lg-4.proc
+            i.fa.facoffee
+            h3 The Meeting
+            p Lorem Ipsum is simply dummy text of the printing
+              br
+              | and typesetting industry. Lorem Ipsum has been
+              br
+              | the industry's standard dummy text ever.
+          .col-lg-4.proc
+            i.fa.facoffee
+            h3 The Meeting
+            p Lorem Ipsum is simply dummy text of the printing
+              br
+              | and typesetting industry. Lorem Ipsum has been
+              br
+              | the industry's standard dummy text ever.
+    .sep.portfolio(data-stellar-background-ratio="0.5" style="background-position: 50%")
+    section#services(name="services")
+    #servicewrap
+      .container
+        .row
+          .col-lg-8-offset-2.centered
+            h1 AN OVERVIEW OF MY SERVICES
+            h3 I'll do all the work for you
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        .row.mt
+          .col-lg-3.service
+            i.fa.fa-star
+            p PREMIUM QUALITY
+              br
+              small|LOREM IPSUM DOLOR
+            .text Lorem Ipsum has been the
+              br
+              | industry's standard dummy text ever
+              br
+              |since the 1500s, when an unknown
+              br
+              |printer.
+          .col-lg-3.service
+            i.fa.fa-star
+            p PREMIUM QUALITY
+              br
+              small|LOREM IPSUM DOLOR
+            .text Lorem Ipsum has been the
+              br
+              | industry's standard dummy text ever
+              br
+              |since the 1500s, when an unknown
+              br
+              |printer.
+          .col-lg-3.service
+            i.fa.fa-star
+            p PREMIUM QUALITY
+              br
+              small|LOREM IPSUM DOLOR
+            .text Lorem Ipsum has been the
+              br
+              | industry's standard dummy text ever
+              br
+              |since the 1500s, when an unknown
+              br
+              |printer.
+          .col-lg-3.service
+            i.fa.fa-star
+            p PREMIUM QUALITY
+              br
+              small|LOREM IPSUM DOLOR
+            .text Lorem Ipsum has been the
+              br
+              | industry's standard dummy text ever
+              br
+              |since the 1500s, when an unknown
+              br
+              |printer.
+    #contact(name="contact")
+    .sep.contact(data-stellar-backgroud-ratio="0.5" style="backgrond-position: 50%")
+    #contactwrap
+      .container
+        .row
+          .col-lg-6
+            p CONTACT ME RIGHT NOW!
+            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              br
+              |Lorem Ipsum has been the industry's standard dummy text ever since the
+              br
+              |1500s.
+              p
+                small 5th Avenue, 987
+                        br
+                        |38399, New York,
+                        br
+                        |USA.
+            p
+              small Tel. 9888-4394
+                    br
+                    |Mail. hello@example.com
+                    br
+                    |Skype. ExampleSkype
+          small
+            .col-lg-6
+              .contact-form.php-mail-form(role="form" action="contactform/contactform.php" method="POST")
+                .form-group
+                  input.form-control#contact-name(type="name" name="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chats")
+                  .validate
+                .form-group
+                  input.form-control#contact-email(type="email" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email")
+                  .validate
+                .form-group
+                  input.form-control#contact-subject(type="text" name="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chats of subject")
+                  .validate
+                .form-group
+                  textarea.form-control#contact-message(type="name" name="name" placeholder="Your Message" data-rule="requred" data-msg="Please write something for us" rows="5")
+                  .validate
+                .loading
+                .error-message
+                .sent-message Your message has been sent. Thank you!
+                .form-send
+                  button.btn.btn-large(type="submit") Send Message
+          small
+        small
+    //- script(type='text/javascript').
+    //-   $(".fancybox").fancybox({
+    //-      helpers : {
+    //-          buttons: {
+    //-              position : 'top'
+    //-          }
+    //-      }
+    //-  });
