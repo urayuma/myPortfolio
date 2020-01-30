@@ -11,10 +11,9 @@ html(lang="ja")
     link(rel="stylesheet" href="../lib/fancybox/fancybox.css")
     link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-buttons.css")
     link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-thumbs.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
     script(src="https://code.jquery.com/jquery-3.4.1.slim.js")
     script(src="https://code.jquery.com/jquery-3.4.1.js")
-    //- script(type="text/javascript" src='/lib/jQuery/jquery.js')
-    //- script(type="text/javascript" src='/lib/jQuery/jquery.min.js')
     script(type="text/javascript" src="http://localhost:3000//js/main.js")
     script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.js')
     script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.min.js')
@@ -25,10 +24,6 @@ html(lang="ja")
     script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-media.js')
     script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-thumbs.js')
     script(type='text/javascript' src='http://localhost:3000//lib/stellar/stellar.min.js')
-    //- script(type="text/javascript" acync src="https://www.google-analytics.com/analytics.js")
-    //- script(src="https://templatemag.com/demo/assets/js/jquery-3.1.0.min.js")
-    //- script(src="https://templatemag.com/demo/assets/js/custom.js")
-    //- script(async src="https://www.googletagmanager.com/gtag/js?id=UA-55234356-6")
   body
     nav#theMenu.menu
       .menu-wrap
@@ -36,9 +31,9 @@ html(lang="ja")
           a.smoothscroll(href="#home") Studio
         i.fa.fa-times.menu-close
         a.smoothscroll(href="#home") Home
-        a.smoothscroll(href="#about") About
+        a.smoothscroll(href="#about") Profile
+        a.smoothscroll(href="#services") Lunguage
         a.smoothscroll(href="#portfolio") Portfolio
-        a.smoothscroll(href="#services") Services
         a.smoothscroll(href="#contact") Contact
       #menuToggle
         i.fa.fa-bars
@@ -47,208 +42,213 @@ html(lang="ja")
       .container
         .row
           .col-md-6.col-md-offset-3
-            h1 Title Empty
+            h1 UraYuma's portfolio
     section#about(name="about")
     #aboutwrap
       .container
         .row
           .col-lg-4.name
             img.img-responsive(src="../img/human.jpg")
-            p My name
+            p 浦 悠眞
             .name-label
           .col-lg-8.name-desc
-            h2 海賊王に俺はなる
-              br
-              | javaScript&
-              br
-              | javaScript
+            h2 profile
+              //- br
+              //- | javaScript&
+              //- br
+              //- | javaScript
             .name-zig
             .col-md-6
-              p Lorem Ipsum is simply dummy text of
+              p はじめまして。平成9年生まれの22歳エンジニア
                 br
-                |the printing and typesetting industry. Lorem Ipsum
+                |未経験の浦悠眞と申します。
                 br
-                |has been the industry's standard dummy text
+                |前職では、2年半工場で働いていました。
                 br
-                |ever since the 1500s, when an unknown printer
+                |Webサイトやアプリケーション作成で様々な業界に
                 br
-                |took a galley of type and scrambled it to make a
+                |携われる事に魅力を感じ、プログラミング学習を
                 br
-                |type specimen book.
-              p It has survived not only five centuries, but also
+                |始めました。
+              p テックエキスパートではHTML、CSS、jQuery、
                 br
-                |the leap into electronic typesetting, remaining
+                |ruby、Ruby on Rails、github、awsを学びました。
                 br
-                |essentially unchanged. It was popularised in the
+                |私を特に成長させたのはチーム開発です。
                 br
-                |1960s with the release of Letraset sheets
+                |エンジニアはコードを書くだけでなくアイディア
                 br
-                |containing Lorem Ipsum passages, and more
+                |を共有するためにコミュニケーションが必要な事
                 br
-                |recently with desktop publishing software like
-                br
-                |Aldus PageMaker including versions of Lorem
-                br
-                |Ipsum.
+                |を知りました。
             .col-md-6
-              p Contrary to popular belief, Lorem Ipsum is not
+              p 現在は主にjavascriptについて学習しています。
                 br
-                |simply random text. It has roots in a piece of
+                |元々私はゲームをしたり、Webサービスを利用
                 br
-                |classical Latin literature from 45 BC, making it
+                |する時に使いやすさを意識していました。
                 br
-                |over 2000 years old.
-              p Richard McClintock, a Latin professor at
+                |それがUIと言われているものと知り、Reactを
                 br
-                |Hampden-Sydney College in Virginia, looked up
+                |学びました。
                 br
-                |one of the more obscure Latin words,
+                |また、javascriptでバックエンドを扱える事に
                 br
-                |consectetur, from a Lorem Ipsum passage, and
-                br
-                |going through the cites of the word in classical
-                br
-                |literature, discovered the undoubtable source.
+                |魅力を感じ、Node.js(express)も学習しています。
+              //- p Richard McClintock, a Latin professor at
+              //-   br
+              //-   |Hampden-Sydney College in Virginia, looked up
+              //-   br
+              //-   |one of the more obscure Latin words,
+              //-   br
+              //-   |consectetur, from a Lorem Ipsum passage, and
+              //-   br
+              //-   |going through the cites of the word in classical
+              //-   br
+              //-   |literature, discovered the undoubtable source.
     .sep.about(data-stellar-backgroud-ratio="0.5")(style="background-position: 50%;")
-    section#portfolio(name="portfolio")
-    #portfoliowrap
-      .container
-        .row
-          h1 成果物
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port01.jpg")
-                      img.img-responsive(src="../img/portfolio/port01.jpg" alt)
-                  .overlay
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port02.jpg")
-                      img.img-responsive(src="../img/portfolio/port02.jpg" alt)
-                  .overlay
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port03.jpg")
-                      img.img-responsive(src="../img/portfolio/port03.jpg" alt)
-                  .overlay
-        .row.mt
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port01.jpg")
-                      img.img-responsive(src="../img/portfolio/port01.jpg" alt)
-                  .overlay
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port02.jpg")
-                      img.img-responsive(src="../img/portfolio/port02.jpg" alt)
-                  .overlay
-          .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
-            .project-wrapper
-              .project
-                .photo-wrapper
-                  .photo
-                    a.fancybox(href="../img/portfolio/port03.jpg")
-                      img.img-responsive(src="../img/portfolio/port03.jpg" alt)
-                  .overlay
-      .container
-        .row.mt.centered
-          h1 MY DESIGB PROCESS
-          .col-lg-4.proc
-            i.fa.facoffee
-            h3 The Meeting
-            p Lorem Ipsum is simply dummy text of the printing
-              br
-              | and typesetting industry. Lorem Ipsum has been
-              br
-              | the industry's standard dummy text ever.
-          .col-lg-4.proc
-            i.fa.facoffee
-            h3 The Meeting
-            p Lorem Ipsum is simply dummy text of the printing
-              br
-              | and typesetting industry. Lorem Ipsum has been
-              br
-              | the industry's standard dummy text ever.
-          .col-lg-4.proc
-            i.fa.facoffee
-            h3 The Meeting
-            p Lorem Ipsum is simply dummy text of the printing
-              br
-              | and typesetting industry. Lorem Ipsum has been
-              br
-              | the industry's standard dummy text ever.
-    .sep.portfolio(data-stellar-background-ratio="0.5" style="background-position: 50%")
     section#services(name="services")
     #servicewrap
       .container
         .row
           .col-lg-8-offset-2.centered
-            h1 AN OVERVIEW OF MY SERVICES
+            h1 Language
             h3 I'll do all the work for you
             p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         .row.mt
           .col-lg-3.service
-            i.fa.fa-star
-            p PREMIUM QUALITY
+            i.fab.fa-html5
+            p HTML
               br
-              small|LOREM IPSUM DOLOR
-            .text Lorem Ipsum has been the
-              br
-              | industry's standard dummy text ever
-              br
-              |since the 1500s, when an unknown
-              br
-              |printer.
+              small|language
           .col-lg-3.service
-            i.fa.fa-star
-            p PREMIUM QUALITY
+            i.fab.fa-css3-alt
+            p CSS
               br
-              small|LOREM IPSUM DOLOR
-            .text Lorem Ipsum has been the
-              br
-              | industry's standard dummy text ever
-              br
-              |since the 1500s, when an unknown
-              br
-              |printer.
+              small|language
           .col-lg-3.service
-            i.fa.fa-star
-            p PREMIUM QUALITY
+            i.far.fa-gem
+            p ruby
               br
-              small|LOREM IPSUM DOLOR
-            .text Lorem Ipsum has been the
-              br
-              | industry's standard dummy text ever
-              br
-              |since the 1500s, when an unknown
-              br
-              |printer.
+              small|language
           .col-lg-3.service
-            i.fa.fa-star
-            p PREMIUM QUALITY
+            i.fab.fa-js
+            p javascript
               br
-              small|LOREM IPSUM DOLOR
-            .text Lorem Ipsum has been the
+              small|language
+        .row.mt
+          .col-lg-8-offset-2.centered
+            h1 Frame work
+          .row.mt
+          .col-lg-3.service
+            i.fas.fa-gem
+            p Ruby on Rails
               br
-              | industry's standard dummy text ever
+              small|frame work
+          .col-lg-3.service
+            i.fab.fa-node-js
+            p express
               br
-              |since the 1500s, when an unknown
+              small|frame work
+        .row.mt
+          .col-lg-8-offset-2.centered
+            h1 Library & Tools
+          .row.mt
+          .col-lg-3.service
+            i.fab.fa-react
+            p React
               br
-              |printer.
+              small|library
+          .col-lg-3.service
+            i.fab.fa-aws
+            p aws
+              br
+              small|tool
+          .col-lg-3.service
+            i.fas.fa-folder-open
+            p firebase
+              br
+              small|tool
+          .col-lg-3.service
+            i.fab.fa-github
+            p github
+              br
+              small|tool
+    .sep.portfolio(data-stellar-background-ratio="0.5" style="background-position: 50%")
+    section#portfolio(name="portfolio")
+    #portfoliowrap
+      .container
+        .row
+          h1 Portfolio
+          //- 写真の雛形
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port01.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port01.jpg" alt)
+        //-           .overlay
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port02.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port02.jpg" alt)
+        //-           .overlay
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port03.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port03.jpg" alt)
+        //-           .overlay
+        //- .row.mt
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port01.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port01.jpg" alt)
+        //-           .overlay
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port02.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port02.jpg" alt)
+        //-           .overlay
+        //-   .col-lg-4.col-md-4.col-sm-4.col-xs-12.desc
+        //-     .project-wrapper
+        //-       .project
+        //-         .photo-wrapper
+        //-           .photo
+        //-             a.fancybox(href="../img/portfolio/port03.jpg")
+        //-               img.img-responsive(src="../img/portfolio/port03.jpg" alt)
+        //-           .overlay
+      .container
+        .row.mt.centered
+          //- h1 MY DESIGB PROCESS
+          .col-lg-6.proc
+            i.fas.fa-comments
+            h3 Chat application
+            a(href="react-portfolio-20200111.firebaseapp.com" target="_brank") react-portfolio-20200111.firebaseapp.com
+            p React + firebaseで作成したチャットアプリです。
+              br
+              | Reactの教本で学習した後にfirebaseを学びながら作りました。
+              br
+              | 現在はReduxを取り入れて改善を行なっています。
+          .col-lg-6.proc
+            i.fas.fa-shopping-cart
+            h3 mercari copy
+            a(href="http://18.177.15.224" target="_brank") http://18.177.15.224
+            p テックエキスパートのチーム開発で作成したメルカリの
+              br
+              | コピーアプリです。
     #contact(name="contact")
     .sep.contact(data-stellar-backgroud-ratio="0.5" style="backgrond-position: 50%")
     #contactwrap
@@ -295,11 +295,3 @@ html(lang="ja")
                   button.btn.btn-large(type="submit") Send Message
           small
         small
-    //- script(type='text/javascript').
-    //-   $(".fancybox").fancybox({
-    //-      helpers : {
-    //-          buttons: {
-    //-              position : 'top'
-    //-          }
-    //-      }
-    //-  });
