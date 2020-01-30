@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/test_shark.jpg) no-repeat center top;
+	background: url(../img/capi.jpeg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
@@ -322,7 +322,10 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 .about {
-	background-image: url(../img/test_shark.jpg);
+	background-image: url(../img/port.jpg);
+	background-size: contain;
+  height: 70%;
+	width: auto;
 }
 
 /* Portfolio Wrap Section */
@@ -361,7 +364,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio {
-	background-image: url(../img/portfolio-sep.jpg);
+	background-image: url(../img/mori.jpg);
+	background-size: contain;
+	height: 80%;
+	width: auto;
 }
 
 /* Service Wrap */
@@ -378,7 +384,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service {
-	text-align: left;
+	text-align: center;
+	/* margin-left: 0.1rem; */
 }
 
 .service small {
@@ -387,8 +394,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service i {
-	float: left;
-	margin-right: 15px;
+	/* float: left; */
+	text-align: center;
+	/* margin-right: 15px; */
 	font-size: 30px;
 	vertical-align: middle;
 }
@@ -422,7 +430,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-	background-image: url(../img/contact-sep.jpg);
+	background-image: url(../img/chocoyama.JPG);
+	background-size: contain;
+	height: 60%;
+	width: auto;
 }
 
 #contactwrap label {
