@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/capi.jpeg) no-repeat center top;
+	background: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fcapi.jpeg?alt=media&token=b5f57f6b-0032-4f87-8d9d-14d3291e4536) no-repeat center top;
 	margin-top: 0px;
 	padding-top:120px;
 	text-align:center;
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 60px;
 	margin: 0 auto 45px;
 	border-top: 1px solid #000;
-	background: url(../img/name-label.png) center bottom no-repeat;
+	background: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fname-label.png?alt=media&token=480f481b-455f-4c30-87a7-a59f6e347042) center bottom no-repeat;
 	background-size: 35px 35px;
 }
 
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 73px;
 	height: 17px;
 	margin: 38px 0 38px;
-	background: url(../img/name-zig.png) 0 0 no-repeat;
+	background: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fname-zig.png?alt=media&token=f22f9637-d050-457f-b4e2-ca8a1369b64f) 0 0 no-repeat;
 	background-size: 73px 17px;
 }
 
@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 .about {
-	background-image: url(../img/port.jpg);
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fport.jpg?alt=media&token=6d51b160-0bb4-49a4-a150-bb0db9ae4048);
 	background-size: contain;
   height: 70%;
 	width: auto;
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio {
-	background-image: url(../img/mori.jpg);
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fmori.jpg?alt=media&token=923b906e-a37f-4a2d-9126-282072640f74);
 	background-size: contain;
 	height: 80%;
 	width: auto;
@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-	background-image: url(../img/chocoyama.JPG);
+	background-image: url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fchocoyama.JPG?alt=media&token=3020d69e-2d9d-4865-948a-111616558110);
 	background-size: contain;
 	height: 60%;
 	width: auto;
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project:hover .photo-wrapper {
   background-color: #2f2f2f;
-	background-image:url(../img/zoom.png);
+	background-image:url(https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2Fzoom.png?alt=media&token=b5ddac05-e098-4427-98f6-11371c8e1d50);
 	background-repeat:no-repeat;
 	background-position:center;
 	top: 0;

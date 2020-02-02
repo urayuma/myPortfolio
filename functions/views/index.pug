@@ -2,29 +2,46 @@ doctype html
 html(lang="ja")
   head
     meta(charset="utf-8")
-    title I like pug!
-    link(rel="stylesheet" href="src/style.css")
-    link(rel="stylesheet" href="src/bootstrap.css")
-    link(rel="stylesheet" href="src/bootstrap.min.css")
-    link(rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css")
-    link(rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css")
-    link(rel="stylesheet" href="../lib/fancybox/fancybox.css")
-    link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-buttons.css")
-    link(rel="stylesheet" href="../lib/easing/helpers/jquery.fancybox-thumbs.css")
+    title urayumaportfolio
+    link(rel="stylesheet" type="text/html" href="https://myportfolio-20200130.firebaseapp.com/../lib/font-awesome/css/font-awesome.css")
+    link(rel="stylesheet" type="text/html" href="https://myportfolio-20200130.firebaseapp.com/../lib/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/html" href="https://myportfolio-20200130.firebaseapp.com/../lib/fancybox/fancybox.css")
+    link(rel="stylesheet" type="text/html" href="https://myportfolio-20200130.firebaseapp.com/../lib/easing/helpers/jquery.fancybox-buttons.css")
+    link(rel="stylesheet" type="text/html" href="https://myportfolio-20200130.firebaseapp.com/../lib/easing/helpers/jquery.fancybox-thumbs.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
     script(src="https://code.jquery.com/jquery-3.4.1.slim.js")
     script(src="https://code.jquery.com/jquery-3.4.1.js")
-    script(type="text/javascript" src="http://localhost:3000//js/main.js")
-    script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/bootstrap/js/bootstrap.min.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/easing/easing.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/easing/easing.min.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/fancybox/fancybox.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-buttons.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-media.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/easing/helpers/jquery.fancybox-thumbs.js')
-    script(type='text/javascript' src='http://localhost:3000//lib/stellar/stellar.min.js')
+    script
+      include js/main.js
+      include lib/bootstrap/js/bootstrap.js
+      include lib/bootstrap/js/bootstrap.min.js
+      include lib/easing/easing.js
+      include lib/easing/easing.min.js
+      include lib/fancybox/fancybox.js
+      include lib/easing/helpers/jquery.fancybox-buttons.js
+      include lib/easing/helpers/jquery.fancybox-media.js
+      include lib/easing/helpers/jquery.fancybox-thumbs.js
+      include lib/stellar/stellar.min.js
   body
+    script(
+      var firebaseConfig = {
+        apiKey: "AIzaSyD5LyHYTGrLi3kNx6f_sgGjZvim1DVCr40",
+        authDomain: "myportfolio-20200130.firebaseapp.com",
+        databaseURL: "https://myportfolio-20200130.firebaseio.com",
+        projectId: "myportfolio-20200130",
+        storageBucket: "myportfolio-20200130.appspot.com",
+        messagingSenderId: "223848199254",
+        appId: "1:223848199254:web:997096d9d5d4d6fe07b7f7",
+        measurementId: "G-Z4LG5CEBGB"
+      }
+    )
+    style
+      include includes/style.css
+      include includes/bootstrap.css
+      include includes/bootstrap.min.css
+    script(src="/__/firebase/7.7.0/firebase-app.js")
+    script(src="/__/firebase/7.7.0/firebase-analytics.js")
+    script(src="/__/firebase/init.js")
     nav#theMenu.menu
       .menu-wrap
         h1.logo
@@ -32,9 +49,9 @@ html(lang="ja")
         i.fa.fa-times.menu-close
         a.smoothscroll(href="#home") Home
         a.smoothscroll(href="#about") Profile
-        a.smoothscroll(href="#services") Lunguage
+        a.smoothscroll(href="#services") Language
         a.smoothscroll(href="#portfolio") Portfolio
-        a.smoothscroll(href="#contact") Contact
+        //- a.smoothscroll(href="#contact") Contact
       #menuToggle
         i.fa.fa-bars
     section#home(name="home")
@@ -48,7 +65,8 @@ html(lang="ja")
       .container
         .row
           .col-lg-4.name
-            img.img-responsive(src="../img/human.jpg")
+            img(src="https://firebasestorage.googleapis.com/v0/b/myportfolio-20200130.appspot.com/o/img%2FIMG_1631.png?alt=media&token=73a41202-102d-4a88-a8c3-9cdb7e379fbd" height="450" width="317")
+            //- include img/human.jpg
             p 浦 悠眞
             .name-label
           .col-lg-8.name-desc
@@ -236,8 +254,14 @@ html(lang="ja")
           .col-lg-6.proc
             i.fas.fa-comments
             h3 Chat application
-            a(href="react-portfolio-20200111.firebaseapp.com" target="_brank") react-portfolio-20200111.firebaseapp.com
-            p React + firebaseで作成したチャットアプリです。
+            a(href="https://react-portfolio-20200111.firebaseapp.com" target="_brank") https://react-portfolio-20200111.firebaseapp.com
+            br
+            |github：
+            span
+            a(href="https://github.com/urayuma/chat-react" target="_brank")|https://github.com/urayuma/chat-react
+            p
+              br
+              | React + firebaseで作成したチャットアプリです。
               br
               | Reactの教本で学習した後にfirebaseを学びながら作りました。
               br
@@ -246,7 +270,15 @@ html(lang="ja")
             i.fas.fa-shopping-cart
             h3 mercari copy
             a(href="http://18.177.15.224" target="_brank") http://18.177.15.224
-            p テックエキスパートのチーム開発で作成したメルカリの
+            br
+            |ID/Pass ID: admin Pass: password
+            br
+            |github：
+            span
+            a(href="https://github.com/urayuma/freemarket_sample_62c"  target="_brank")|https://github.com/urayuma/freemarket_sample_62c
+            p
+              br
+              |テックエキスパートのチーム開発で作成したメルカリの
               br
               | コピーアプリです。
     #contact(name="contact")
@@ -254,44 +286,45 @@ html(lang="ja")
     #contactwrap
       .container
         .row
-          .col-lg-6
-            p CONTACT ME RIGHT NOW!
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              br
-              |Lorem Ipsum has been the industry's standard dummy text ever since the
-              br
-              |1500s.
-              p
-                small 5th Avenue, 987
-                        br
-                        |38399, New York,
-                        br
-                        |USA.
-            p
-              small Tel. 9888-4394
-                    br
-                    |Mail. hello@example.com
-                    br
-                    |Skype. ExampleSkype
-          small
-            .col-lg-6
-              .contact-form.php-mail-form(role="form" action="contactform/contactform.php" method="POST")
-                .form-group
-                  input.form-control#contact-name(type="name" name="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chats")
-                  .validate
-                .form-group
-                  input.form-control#contact-email(type="email" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email")
-                  .validate
-                .form-group
-                  input.form-control#contact-subject(type="text" name="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chats of subject")
-                  .validate
-                .form-group
-                  textarea.form-control#contact-message(type="name" name="name" placeholder="Your Message" data-rule="requred" data-msg="Please write something for us" rows="5")
-                  .validate
-                .loading
-                .error-message
-                .sent-message Your message has been sent. Thank you!
-                .form-send
-                  button.btn.btn-large(type="submit") Send Message
+          //- .col-lg-6
+            h1 Contact
+          //-   p CONTACT ME RIGHT NOW!
+          //-   p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          //-     br
+          //-     |Lorem Ipsum has been the industry's standard dummy text ever since the
+          //-     br
+          //-     |1500s.
+          //-     p
+          //-       small 5th Avenue, 987
+          //-               br
+          //-               |38399, New York,
+          //-               br
+          //-               |USA.
+          //-   p
+          //-     small Tel. 9888-4394
+          //-           br
+          //-           |Mail. hello@example.com
+          //-           br
+          //-           |Skype. ExampleSkype
+          //- small
+          //-   .col-lg-6
+          //-     .contact-form.php-mail-form(role="form" action="contactform/contactform.php" method="POST")
+          //-       .form-group
+          //-         input.form-control#contact-name(type="name" name="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chats")
+          //-         .validate
+          //-       .form-group
+          //-         input.form-control#contact-email(type="email" name="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email")
+          //-         .validate
+          //-       .form-group
+          //-         input.form-control#contact-subject(type="text" name="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chats of subject")
+          //-         .validate
+          //-       .form-group
+          //-         textarea.form-control#contact-message(type="name" name="name" placeholder="Your Message" data-rule="requred" data-msg="Please write something for us" rows="5")
+          //-         .validate
+          //-       .loading
+          //-       .error-message
+          //-       .sent-message Your message has been sent. Thank you!
+          //-       .form-send
+          //-         button.btn.btn-large(type="submit") Send Message
           small
         small

@@ -1,0 +1,1046 @@
+[debug] [2020-01-31T10:00:30.312Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T10:00:30.315Z] Command:       /usr/local/bin/node /Users/urayuma/.npm-global/bin/firebase serve
+[debug] [2020-01-31T10:00:30.315Z] CLI Version:   7.12.1
+[debug] [2020-01-31T10:00:30.315Z] Platform:      darwin
+[debug] [2020-01-31T10:00:30.315Z] Node Version:  v12.14.0
+[debug] [2020-01-31T10:00:30.321Z] Time:          Fri Jan 31 2020 19:00:30 GMT+0900 (GMT+09:00)
+[debug] [2020-01-31T10:00:30.321Z] ----------------------------------------------------------------------
+[debug] [2020-01-31T10:00:30.321Z] 
+[debug] [2020-01-31T10:00:30.332Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-31T10:00:30.332Z] > authorizing via signed-in user
+[debug] [2020-01-31T10:00:30.332Z] [iam] checking project myportfolio-20200130 for permissions ["firebase.projects.get"]
+[debug] [2020-01-31T10:00:30.334Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/myportfolio-20200130:testIamPermissions  
+
+[debug] [2020-01-31T10:00:31.133Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-31T10:00:31.135Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/myportfolio-20200130  
+ 
+[debug] [2020-01-31T10:00:31.844Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/urayuma/portfolio/myPortfolio'...
+[info] 
+[debug] [2020-01-31T10:00:31.849Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/myportfolio-20200130/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-01-31T10:00:33.178Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/urayuma/portfolio/myPortfolio/functions" for Cloud Functions...
+[debug] [2020-01-31T10:00:33.218Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:00:33.218Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-31T10:00:33.218Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:00:33.219Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83506.sock
+[debug] [2020-01-31T10:00:33.219Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-01-31T10:00:33.443Z] [runtime-status] [83506] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:33.444Z] [runtime-status] [83506] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:33.449Z] [runtime-status] [83506] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:33.455Z] [runtime-status] [83506] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:33.456Z] [runtime-status] [83506] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[api]: http function initialized (http://localhost:5001/myportfolio-20200130/us-central1/api).
+[debug] [2020-01-31T10:00:33.780Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: IDLE
+[info] [hosting] Rewriting / to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:00:44.705Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:00:44.706Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:00:44.706Z] Accepted request GET /myportfolio-20200130/us-central1/api/ --> api
+[debug] [2020-01-31T10:00:44.722Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:00:44.722Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-31T10:00:44.722Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:44.723Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:44.723Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: BUSY
+[debug] [2020-01-31T10:00:45.216Z] [runtime-status] [83508] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:45.217Z] [runtime-status] [83508] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:45.220Z] [runtime-status] [83508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:45.222Z] [runtime-status] [83508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:45.223Z] [runtime-status] [83508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:45.332Z] [runtime-status] [83508] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:45.333Z] [runtime-status] [83508] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:45.333Z] [runtime-status] [83508] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:45.339Z] [runtime-status] [83508] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:45.346Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:00:45.361Z] [runtime-status] [83508] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:45.364Z] [runtime-status] [83508] Ephemeral server survived.
+[info] >  /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug, line 133:
+[info] >  You should not have pug tags with multiple attributes.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:46.216Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: IDLE
+[debug] [2020-01-31T10:00:46.216Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /img/capi.jpeg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-label.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-zig.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:00:46.347Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:00:46.347Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:00:46.347Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/capi.jpeg --> api
+[debug] [2020-01-31T10:00:46.347Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.347Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:46.348Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: BUSY
+[debug] [2020-01-31T10:00:46.348Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:00:46.348Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:00:46.348Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-label.png --> api
+[debug] [2020-01-31T10:00:46.355Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:00:46.355Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-31T10:00:46.355Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.355Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83509.sock
+[debug] [2020-01-31T10:00:46.355Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: BUSY
+[debug] [2020-01-31T10:00:46.356Z] [runtime-status] [83508] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:46.357Z] [runtime-status] [83508] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:46.357Z] [runtime-status] [83508] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:46.357Z] [runtime-status] [83508] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:46.358Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:00:46.368Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:00:46.369Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:00:46.369Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-zig.png --> api
+[debug] [2020-01-31T10:00:46.378Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:00:46.378Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-31T10:00:46.378Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.378Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83510.sock
+[debug] [2020-01-31T10:00:46.378Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: BUSY
+[info] [hosting] Rewriting /img/port.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/mori.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:00:46.399Z] [runtime-status] [83508] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:46.401Z] [runtime-status] [83508] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:46.404Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: IDLE
+[debug] [2020-01-31T10:00:46.405Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] [hosting] Rewriting /img/chocoyama.JPG to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:00:46.415Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:00:46.415Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:00:46.415Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/port.jpg --> api
+[debug] [2020-01-31T10:00:46.415Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.415Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:46.415Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: BUSY
+[debug] [2020-01-31T10:00:46.417Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:00:46.417Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:00:46.417Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/mori.jpg --> api
+[debug] [2020-01-31T10:00:46.430Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:00:46.431Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-31T10:00:46.431Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.431Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83511.sock
+[debug] [2020-01-31T10:00:46.431Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: BUSY
+[debug] [2020-01-31T10:00:46.437Z] [runtime-status] [83508] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:46.438Z] [runtime-status] [83508] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:46.438Z] [runtime-status] [83508] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:46.438Z] [runtime-status] [83508] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83508.sock
+[debug] [2020-01-31T10:00:46.439Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:00:46.466Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-01-31T10:00:46.466Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-31T10:00:46.466Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/chocoyama.JPG --> api
+[debug] [2020-01-31T10:00:46.475Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:00:46.475Z] [worker-pool] Adding worker with key api, total=5
+[debug] [2020-01-31T10:00:46.475Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:00:46.475Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83512.sock
+[debug] [2020-01-31T10:00:46.475Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: BUSY
+[debug] [2020-01-31T10:00:46.476Z] [runtime-status] [83508] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:46.476Z] [runtime-status] [83508] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:46.479Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: IDLE
+[debug] [2020-01-31T10:00:46.480Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:00:47.229Z] [runtime-status] [83509] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:47.232Z] [runtime-status] [83509] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:47.234Z] [runtime-status] [83509] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:47.237Z] [runtime-status] [83509] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.240Z] [runtime-status] [83509] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.245Z] [runtime-status] [83512] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:47.248Z] [runtime-status] [83512] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:47.259Z] [runtime-status] [83512] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:47.260Z] [runtime-status] [83510] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:47.261Z] [runtime-status] [83512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.262Z] [runtime-status] [83512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.262Z] [runtime-status] [83510] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:47.272Z] [runtime-status] [83510] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:47.274Z] [runtime-status] [83510] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.278Z] [runtime-status] [83510] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.296Z] [runtime-status] [83511] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:00:47.297Z] [runtime-status] [83511] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:00:47.299Z] [runtime-status] [83511] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:00:47.305Z] [runtime-status] [83511] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.306Z] [runtime-status] [83511] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:00:47.593Z] [runtime-status] [83512] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:47.594Z] [runtime-status] [83512] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:47.594Z] [runtime-status] [83512] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:47.599Z] [runtime-status] [83512] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83512.sock
+[debug] [2020-01-31T10:00:47.603Z] [runtime-status] [83511] Trigger "api" has been found, beginning invocation!
+[debug] [2020-01-31T10:00:47.604Z] [functions] Runtime ready! Sending request!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:47.606Z] [runtime-status] [83511] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:47.606Z] [runtime-status] [83511] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:47.612Z] [runtime-status] [83511] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83511.sock
+[debug] [2020-01-31T10:00:47.630Z] [runtime-status] [83512] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:47.636Z] [runtime-status] [83512] Ephemeral server survived.
+[debug] [2020-01-31T10:00:47.639Z] [runtime-status] [83509] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:47.641Z] [runtime-status] [83509] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:47.641Z] [runtime-status] [83509] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:47.642Z] [runtime-status] [83509] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83509.sock
+[debug] [2020-01-31T10:00:47.649Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:00:47.661Z] [runtime-status] [83510] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:00:47.662Z] [runtime-status] [83510] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:00:47.665Z] [runtime-status] [83510] Running api in mode HTTPS
+[debug] [2020-01-31T10:00:47.671Z] [runtime-status] [83509] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:47.675Z] [runtime-status] [83509] Ephemeral server survived.
+[debug] [2020-01-31T10:00:47.681Z] [runtime-status] [83510] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83510.sock
+[debug] [2020-01-31T10:00:47.682Z] [functions] Runtime ready! Sending request!
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:47.707Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: IDLE
+[debug] [2020-01-31T10:00:47.707Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:00:47.710Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:00:47.732Z] [runtime-status] [83510] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:47.736Z] [runtime-status] [83510] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:47.748Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: IDLE
+[debug] [2020-01-31T10:00:47.748Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:47.761Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: IDLE
+[debug] [2020-01-31T10:00:47.761Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:00:47.764Z] [runtime-status] [83511] Ephemeral server handling GET request
+[debug] [2020-01-31T10:00:47.773Z] [runtime-status] [83511] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:00:47.798Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: IDLE
+[debug] [2020-01-31T10:00:47.799Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-31T10:01:26.591Z] File /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug changed, reloading triggers
+[debug] [2020-01-31T10:01:27.594Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T10:01:27.594Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: FINISHING
+[debug] [2020-01-31T10:01:27.595Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:01:27.595Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: FINISHING
+[debug] [2020-01-31T10:01:27.596Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:01:27.596Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: FINISHING
+[debug] [2020-01-31T10:01:27.596Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:01:27.596Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: FINISHING
+[debug] [2020-01-31T10:01:27.596Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:01:27.596Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: FINISHING
+[debug] [2020-01-31T10:01:27.596Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:01:27.596Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: FINISHING
+[debug] [2020-01-31T10:01:27.628Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:01:27.629Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T10:01:27.629Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:01:27.629Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83540.sock
+[debug] [2020-01-31T10:01:27.629Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: BUSY
+[debug] [2020-01-31T10:01:27.635Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: exited
+[debug] [2020-01-31T10:01:27.636Z] [worker-~diagnostic~-988119b7-4295-48d8-ac61-fab7ec6ab28e]: FINISHED
+[debug] [2020-01-31T10:01:27.636Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: exited
+[debug] [2020-01-31T10:01:27.636Z] [worker-api-8a2b6cc3-dcfc-4dcb-82cd-4b3c211dfe00]: FINISHED
+[debug] [2020-01-31T10:01:27.636Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: exited
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-26e58b52-ad6b-469f-8527-25b1717b94e8]: FINISHED
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: exited
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-d5aa3ef0-6066-4063-a57b-01c9da7e9a3d]: FINISHED
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: exited
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-4098001c-aac4-4bf5-8671-7c878e032537]: FINISHED
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: exited
+[debug] [2020-01-31T10:01:27.637Z] [worker-api-e21e5b6c-8416-4c2a-8148-a4ce6356c573]: FINISHED
+[debug] [2020-01-31T10:01:28.370Z] [runtime-status] [83540] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:01:28.375Z] [runtime-status] [83540] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:01:28.380Z] [runtime-status] [83540] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:01:28.382Z] [runtime-status] [83540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:28.383Z] [runtime-status] [83540] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:28.660Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: IDLE
+[info] [hosting] Rewriting / to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:01:29.481Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:01:29.481Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:01:29.481Z] Accepted request GET /myportfolio-20200130/us-central1/api/ --> api
+[debug] [2020-01-31T10:01:29.481Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T10:01:29.482Z] [worker-pool] Cleaned up workers for api: 5 --> 0
+[debug] [2020-01-31T10:01:29.487Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:01:29.487Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-31T10:01:29.488Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:29.488Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:29.488Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: BUSY
+[debug] [2020-01-31T10:01:29.732Z] [runtime-status] [83548] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:01:29.734Z] [runtime-status] [83548] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:01:29.735Z] [runtime-status] [83548] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:01:29.736Z] [runtime-status] [83548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:29.737Z] [runtime-status] [83548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:29.839Z] [runtime-status] [83548] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:29.840Z] [runtime-status] [83548] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:29.840Z] [runtime-status] [83548] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:29.843Z] [runtime-status] [83548] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:29.846Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:29.856Z] [runtime-status] [83548] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:29.859Z] [runtime-status] [83548] Ephemeral server survived.
+[info] >  /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug, line 133:
+[info] >  You should not have pug tags with multiple attributes.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:30.557Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: IDLE
+[debug] [2020-01-31T10:01:30.557Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /img/capi.jpeg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-label.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-zig.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:01:30.626Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:01:30.626Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:01:30.626Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/capi.jpeg --> api
+[debug] [2020-01-31T10:01:30.626Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.626Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.626Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: BUSY
+[debug] [2020-01-31T10:01:30.628Z] [runtime-status] [83548] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:30.628Z] [runtime-status] [83548] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:30.628Z] [runtime-status] [83548] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:30.629Z] [runtime-status] [83548] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.629Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:30.632Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:01:30.632Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:01:30.632Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-zig.png --> api
+[debug] [2020-01-31T10:01:30.642Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:01:30.643Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-31T10:01:30.643Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.643Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83549.sock
+[debug] [2020-01-31T10:01:30.643Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: BUSY
+[debug] [2020-01-31T10:01:30.643Z] [runtime-status] [83548] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:30.643Z] [runtime-status] [83548] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:30.648Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: IDLE
+[debug] [2020-01-31T10:01:30.648Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:01:30.649Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:01:30.649Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:01:30.649Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-label.png --> api
+[debug] [2020-01-31T10:01:30.649Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.649Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.649Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: BUSY
+[info] [hosting] Rewriting /img/port.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/mori.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:01:30.662Z] [runtime-status] [83548] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:30.663Z] [runtime-status] [83548] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:30.663Z] [runtime-status] [83548] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:30.663Z] [runtime-status] [83548] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.664Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:30.673Z] [runtime-status] [83548] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:30.673Z] [runtime-status] [83548] Ephemeral server survived.
+[debug] [2020-01-31T10:01:30.673Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:01:30.674Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:01:30.674Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/port.jpg --> api
+[debug] [2020-01-31T10:01:30.701Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:01:30.701Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-31T10:01:30.701Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.702Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83550.sock
+[debug] [2020-01-31T10:01:30.702Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:30.713Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: IDLE
+[debug] [2020-01-31T10:01:30.713Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] [hosting] Rewriting /img/chocoyama.JPG to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:01:30.718Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:01:30.718Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:01:30.718Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/mori.jpg --> api
+[debug] [2020-01-31T10:01:30.718Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.718Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.718Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: BUSY
+[debug] [2020-01-31T10:01:30.721Z] [runtime-status] [83548] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:30.722Z] [runtime-status] [83548] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:30.722Z] [runtime-status] [83548] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:30.722Z] [runtime-status] [83548] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83548.sock
+[debug] [2020-01-31T10:01:30.723Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:30.728Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:01:30.728Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:01:30.728Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/chocoyama.JPG --> api
+[debug] [2020-01-31T10:01:30.737Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:01:30.738Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-31T10:01:30.738Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:01:30.738Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83551.sock
+[debug] [2020-01-31T10:01:30.738Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: BUSY
+[debug] [2020-01-31T10:01:30.739Z] [runtime-status] [83548] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:30.739Z] [runtime-status] [83548] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:30.743Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: IDLE
+[debug] [2020-01-31T10:01:30.743Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:01:31.233Z] [runtime-status] [83549] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:01:31.235Z] [runtime-status] [83549] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:01:31.238Z] [runtime-status] [83549] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:01:31.242Z] [runtime-status] [83549] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.245Z] [runtime-status] [83549] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.334Z] [runtime-status] [83551] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:01:31.337Z] [runtime-status] [83551] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:01:31.356Z] [runtime-status] [83550] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:01:31.362Z] [runtime-status] [83551] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:01:31.364Z] [runtime-status] [83551] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.366Z] [runtime-status] [83551] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.410Z] [runtime-status] [83550] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:01:31.414Z] [runtime-status] [83550] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:01:31.424Z] [runtime-status] [83550] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.427Z] [runtime-status] [83550] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:01:31.488Z] [runtime-status] [83549] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:31.490Z] [runtime-status] [83549] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:31.490Z] [runtime-status] [83549] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:31.505Z] [runtime-status] [83549] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83549.sock
+[debug] [2020-01-31T10:01:31.509Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:31.558Z] [runtime-status] [83549] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:31.559Z] [runtime-status] [83549] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:31.582Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: IDLE
+[debug] [2020-01-31T10:01:31.582Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:01:31.613Z] [runtime-status] [83551] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:31.614Z] [runtime-status] [83551] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:31.614Z] [runtime-status] [83551] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:31.622Z] [runtime-status] [83551] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83551.sock
+[debug] [2020-01-31T10:01:31.626Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:31.651Z] [runtime-status] [83551] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:31.657Z] [runtime-status] [83551] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:31.673Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: IDLE
+[debug] [2020-01-31T10:01:31.674Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:01:31.685Z] [runtime-status] [83550] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:01:31.687Z] [runtime-status] [83550] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:01:31.687Z] [runtime-status] [83550] Running api in mode HTTPS
+[debug] [2020-01-31T10:01:31.693Z] [runtime-status] [83550] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83550.sock
+[debug] [2020-01-31T10:01:31.702Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:01:31.718Z] [runtime-status] [83550] Ephemeral server handling GET request
+[debug] [2020-01-31T10:01:31.723Z] [runtime-status] [83550] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:01:31.739Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: IDLE
+[debug] [2020-01-31T10:01:31.740Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-31T10:02:22.746Z] File /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug changed, reloading triggers
+[debug] [2020-01-31T10:02:23.749Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T10:02:23.749Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: FINISHING
+[debug] [2020-01-31T10:02:23.750Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:02:23.750Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: FINISHING
+[debug] [2020-01-31T10:02:23.750Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:02:23.750Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: FINISHING
+[debug] [2020-01-31T10:02:23.750Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:02:23.750Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: FINISHING
+[debug] [2020-01-31T10:02:23.750Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:02:23.750Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: FINISHING
+[debug] [2020-01-31T10:02:23.783Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:02:23.783Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T10:02:23.783Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:02:23.783Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83554.sock
+[debug] [2020-01-31T10:02:23.783Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: BUSY
+[debug] [2020-01-31T10:02:23.786Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: exited
+[debug] [2020-01-31T10:02:23.787Z] [worker-~diagnostic~-e9e0d12b-0e5e-43f2-832a-17231cca355f]: FINISHED
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: exited
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-9642bf86-34cc-4986-a9b9-c809d64a1dff]: FINISHED
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: exited
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-91de4540-140b-4158-bfc1-b31a2724bf49]: FINISHED
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: exited
+[debug] [2020-01-31T10:02:23.787Z] [worker-api-6c4abb25-68f7-4633-9bdd-a27b578b7f2c]: FINISHED
+[debug] [2020-01-31T10:02:23.788Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: exited
+[debug] [2020-01-31T10:02:23.788Z] [worker-api-c8fc4bbf-eb33-4e47-813a-dfab7df95b83]: FINISHED
+[debug] [2020-01-31T10:02:24.406Z] [runtime-status] [83554] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:24.408Z] [runtime-status] [83554] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:24.413Z] [runtime-status] [83554] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:24.415Z] [runtime-status] [83554] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:24.416Z] [runtime-status] [83554] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:24.673Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: IDLE
+[info] [hosting] Rewriting / to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:02:25.796Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:02:25.797Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:02:25.797Z] Accepted request GET /myportfolio-20200130/us-central1/api/ --> api
+[debug] [2020-01-31T10:02:25.797Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T10:02:25.797Z] [worker-pool] Cleaned up workers for api: 4 --> 0
+[debug] [2020-01-31T10:02:25.803Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:25.803Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-31T10:02:25.803Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:25.803Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83562.sock
+[debug] [2020-01-31T10:02:25.803Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: BUSY
+[debug] [2020-01-31T10:02:26.040Z] [runtime-status] [83562] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:26.041Z] [runtime-status] [83562] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:26.044Z] [runtime-status] [83562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:26.045Z] [runtime-status] [83562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:26.047Z] [runtime-status] [83562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:26.142Z] [runtime-status] [83562] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:26.143Z] [runtime-status] [83562] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:26.143Z] [runtime-status] [83562] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:26.145Z] [runtime-status] [83562] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83562.sock
+[debug] [2020-01-31T10:02:26.148Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:26.158Z] [runtime-status] [83562] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:26.159Z] [runtime-status] [83562] Ephemeral server survived.
+[info] >  /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug, line 133:
+[info] >  You should not have pug tags with multiple attributes.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:26.897Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: IDLE
+[debug] [2020-01-31T10:02:26.897Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /img/capi.jpeg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-label.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-zig.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/port.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/mori.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/chocoyama.JPG to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:02:26.994Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:02:26.994Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:02:26.994Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/capi.jpeg --> api
+[debug] [2020-01-31T10:02:26.994Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:26.994Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83562.sock
+[debug] [2020-01-31T10:02:26.995Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: BUSY
+[debug] [2020-01-31T10:02:26.995Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:02:26.995Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:02:26.995Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-label.png --> api
+[debug] [2020-01-31T10:02:27.002Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:27.003Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-31T10:02:27.003Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:27.003Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83563.sock
+[debug] [2020-01-31T10:02:27.004Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: BUSY
+[debug] [2020-01-31T10:02:27.004Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:02:27.004Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:02:27.004Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/port.jpg --> api
+[debug] [2020-01-31T10:02:27.012Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:27.012Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-31T10:02:27.012Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:27.012Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83564.sock
+[debug] [2020-01-31T10:02:27.012Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: BUSY
+[debug] [2020-01-31T10:02:27.013Z] [runtime-status] [83562] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:27.014Z] [runtime-status] [83562] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:27.014Z] [runtime-status] [83562] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:27.014Z] [runtime-status] [83562] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83562.sock
+[debug] [2020-01-31T10:02:27.015Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:27.017Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:02:27.017Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:02:27.017Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-zig.png --> api
+[debug] [2020-01-31T10:02:27.034Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:27.034Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-31T10:02:27.034Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:27.034Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83565.sock
+[debug] [2020-01-31T10:02:27.034Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: BUSY
+[debug] [2020-01-31T10:02:27.035Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-01-31T10:02:27.035Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-31T10:02:27.035Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/chocoyama.JPG --> api
+[debug] [2020-01-31T10:02:27.058Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:27.058Z] [worker-pool] Adding worker with key api, total=5
+[debug] [2020-01-31T10:02:27.059Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:27.059Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83566.sock
+[debug] [2020-01-31T10:02:27.059Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: BUSY
+[debug] [2020-01-31T10:02:27.059Z] [work-queue] {"queueLength":1,"workRunningCount":5}
+[debug] [2020-01-31T10:02:27.059Z] [work-queue] {"queueLength":0,"workRunningCount":6}
+[debug] [2020-01-31T10:02:27.059Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/mori.jpg --> api
+[debug] [2020-01-31T10:02:27.072Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:02:27.073Z] [worker-pool] Adding worker with key api, total=6
+[debug] [2020-01-31T10:02:27.073Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:02:27.073Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83567.sock
+[debug] [2020-01-31T10:02:27.073Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: BUSY
+[debug] [2020-01-31T10:02:27.073Z] [runtime-status] [83562] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:27.073Z] [runtime-status] [83562] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:27.167Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: IDLE
+[debug] [2020-01-31T10:02:27.167Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-31T10:02:27.861Z] [runtime-status] [83563] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:27.863Z] [runtime-status] [83563] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:27.874Z] [runtime-status] [83563] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:27.876Z] [runtime-status] [83563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.877Z] [runtime-status] [83563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.925Z] [runtime-status] [83564] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:27.927Z] [runtime-status] [83564] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:27.929Z] [runtime-status] [83564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:27.931Z] [runtime-status] [83564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.932Z] [runtime-status] [83564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.957Z] [runtime-status] [83566] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:27.959Z] [runtime-status] [83566] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:27.962Z] [runtime-status] [83566] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:27.980Z] [runtime-status] [83566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.982Z] [runtime-status] [83566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:27.987Z] [runtime-status] [83565] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:27.990Z] [runtime-status] [83565] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:28.043Z] [runtime-status] [83567] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:02:28.044Z] [runtime-status] [83565] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:28.056Z] [runtime-status] [83565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:28.057Z] [runtime-status] [83565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:28.081Z] [runtime-status] [83567] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:02:28.084Z] [runtime-status] [83567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:02:28.088Z] [runtime-status] [83567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:28.089Z] [runtime-status] [83567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:02:28.268Z] [runtime-status] [83563] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:28.271Z] [runtime-status] [83563] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:28.271Z] [runtime-status] [83563] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:28.294Z] [runtime-status] [83564] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:28.295Z] [runtime-status] [83564] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:28.295Z] [runtime-status] [83564] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:28.303Z] [runtime-status] [83564] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83564.sock
+[debug] [2020-01-31T10:02:28.306Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:28.327Z] [runtime-status] [83564] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:28.357Z] [runtime-status] [83563] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83563.sock
+[debug] [2020-01-31T10:02:28.365Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:28.377Z] [runtime-status] [83566] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:28.380Z] [runtime-status] [83566] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:28.381Z] [runtime-status] [83566] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:28.398Z] [runtime-status] [83563] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:28.401Z] [runtime-status] [83563] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:28.410Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: IDLE
+[debug] [2020-01-31T10:02:28.410Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:02:28.412Z] [runtime-status] [83564] Ephemeral server survived.
+[debug] [2020-01-31T10:02:28.425Z] [runtime-status] [83566] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83566.sock
+[debug] [2020-01-31T10:02:28.429Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:28.453Z] [runtime-status] [83566] Ephemeral server handling GET request
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:28.472Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: IDLE
+[debug] [2020-01-31T10:02:28.472Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:02:28.472Z] [runtime-status] [83565] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:28.473Z] [runtime-status] [83565] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:28.473Z] [runtime-status] [83565] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:28.474Z] [runtime-status] [83566] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:28.500Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: IDLE
+[debug] [2020-01-31T10:02:28.500Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:02:28.505Z] [runtime-status] [83565] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83565.sock
+[debug] [2020-01-31T10:02:28.507Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:28.509Z] [runtime-status] [83567] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:02:28.509Z] [runtime-status] [83567] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:02:28.509Z] [runtime-status] [83567] Running api in mode HTTPS
+[debug] [2020-01-31T10:02:28.514Z] [runtime-status] [83567] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83567.sock
+[debug] [2020-01-31T10:02:28.516Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:02:28.536Z] [runtime-status] [83567] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:28.541Z] [runtime-status] [83567] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:28.560Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: IDLE
+[debug] [2020-01-31T10:02:28.560Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:02:28.562Z] [runtime-status] [83565] Ephemeral server handling GET request
+[debug] [2020-01-31T10:02:28.566Z] [runtime-status] [83565] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:02:28.585Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: IDLE
+[debug] [2020-01-31T10:02:28.586Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-31T10:03:04.278Z] File /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug changed, reloading triggers
+[debug] [2020-01-31T10:03:05.284Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T10:03:05.284Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: FINISHING
+[debug] [2020-01-31T10:03:05.284Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: FINISHING
+[debug] [2020-01-31T10:03:05.285Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: FINISHING
+[debug] [2020-01-31T10:03:05.285Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: FINISHING
+[debug] [2020-01-31T10:03:05.285Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: FINISHING
+[debug] [2020-01-31T10:03:05.285Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: FINISHING
+[debug] [2020-01-31T10:03:05.285Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:03:05.285Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: FINISHING
+[debug] [2020-01-31T10:03:05.310Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:03:05.310Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T10:03:05.310Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:03:05.310Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83570.sock
+[debug] [2020-01-31T10:03:05.310Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: BUSY
+[debug] [2020-01-31T10:03:05.314Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: exited
+[debug] [2020-01-31T10:03:05.314Z] [worker-~diagnostic~-214ace14-7439-4afd-b0ad-b595a8d7c456]: FINISHED
+[debug] [2020-01-31T10:03:05.314Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: exited
+[debug] [2020-01-31T10:03:05.314Z] [worker-api-7d4054ee-b4b9-4a57-89ae-a1ee2c3e3dca]: FINISHED
+[debug] [2020-01-31T10:03:05.314Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: exited
+[debug] [2020-01-31T10:03:05.314Z] [worker-api-fc30f2a1-4a8c-4cad-b239-c7beb191b429]: FINISHED
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: exited
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-1c321426-73fd-44a7-a28d-c4fee9d839a3]: FINISHED
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: exited
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-c48bfb29-54fa-4c70-809b-7393d8ee4afb]: FINISHED
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: exited
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-a669b2be-9629-4114-a43b-da1fec325fbf]: FINISHED
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: exited
+[debug] [2020-01-31T10:03:05.315Z] [worker-api-74a4262e-48cc-44a8-9c04-6f5086562b4f]: FINISHED
+[debug] [2020-01-31T10:03:05.948Z] [runtime-status] [83570] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:05.950Z] [runtime-status] [83570] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:05.955Z] [runtime-status] [83570] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:05.956Z] [runtime-status] [83570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:05.963Z] [runtime-status] [83570] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:06.236Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: IDLE
+[debug] [2020-01-31T10:03:45.417Z] File /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug changed, reloading triggers
+[debug] [2020-01-31T10:03:46.418Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T10:03:46.418Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: FINISHING
+[debug] [2020-01-31T10:03:46.418Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T10:03:46.421Z] [worker-pool] Cleaned up workers for api: 6 --> 0
+[debug] [2020-01-31T10:03:46.429Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:03:46.430Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T10:03:46.430Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:03:46.430Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83581.sock
+[debug] [2020-01-31T10:03:46.430Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: BUSY
+[debug] [2020-01-31T10:03:46.431Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: exited
+[debug] [2020-01-31T10:03:46.431Z] [worker-~diagnostic~-6e7db95c-5048-4b38-89ff-6c2e3726cc9d]: FINISHED
+[info] [hosting] Rewriting / to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:03:46.458Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:03:46.458Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:03:46.459Z] Accepted request GET /myportfolio-20200130/us-central1/api/ --> api
+[debug] [2020-01-31T10:03:46.459Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T10:03:46.466Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:46.466Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-31T10:03:46.466Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:46.466Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:03:46.466Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: BUSY
+[debug] [2020-01-31T10:03:47.116Z] [runtime-status] [83581] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:47.117Z] [runtime-status] [83582] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:47.118Z] [runtime-status] [83581] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:47.119Z] [runtime-status] [83582] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:47.139Z] [runtime-status] [83581] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:47.158Z] [runtime-status] [83582] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:47.159Z] [runtime-status] [83582] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:47.161Z] [runtime-status] [83582] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:47.164Z] [runtime-status] [83581] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:47.166Z] [runtime-status] [83581] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:47.468Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: IDLE
+[debug] [2020-01-31T10:03:47.473Z] [runtime-status] [83582] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:47.481Z] [runtime-status] [83582] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:47.482Z] [runtime-status] [83582] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:47.487Z] [runtime-status] [83582] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:03:47.490Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:47.510Z] [runtime-status] [83582] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:47.513Z] [runtime-status] [83582] Ephemeral server survived.
+[info] >  /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug, line 133:
+[info] >  You should not have pug tags with multiple attributes.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:48.257Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: IDLE
+[debug] [2020-01-31T10:03:48.257Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /img/capi.jpeg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/name-label.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:03:48.314Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:03:48.315Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:03:48.315Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/capi.jpeg --> api
+[debug] [2020-01-31T10:03:48.315Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.315Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:03:48.315Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: BUSY
+[debug] [2020-01-31T10:03:48.316Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:03:48.316Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:03:48.317Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-label.png --> api
+[debug] [2020-01-31T10:03:48.326Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:48.326Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-31T10:03:48.326Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.326Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83583.sock
+[debug] [2020-01-31T10:03:48.327Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: BUSY
+[debug] [2020-01-31T10:03:48.327Z] [runtime-status] [83582] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:48.328Z] [runtime-status] [83582] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:48.328Z] [runtime-status] [83582] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:48.328Z] [runtime-status] [83582] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:03:48.329Z] [functions] Runtime ready! Sending request!
+[info] [hosting] Rewriting /img/name-zig.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/port.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/mori.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/chocoyama.JPG to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:03:48.341Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:03:48.341Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:03:48.341Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/port.jpg --> api
+[debug] [2020-01-31T10:03:48.354Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:48.354Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-31T10:03:48.354Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.354Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83584.sock
+[debug] [2020-01-31T10:03:48.354Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: BUSY
+[debug] [2020-01-31T10:03:48.356Z] [runtime-status] [83582] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:48.356Z] [runtime-status] [83582] Ephemeral server survived.
+[debug] [2020-01-31T10:03:48.361Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:03:48.361Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:03:48.361Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/mori.jpg --> api
+[debug] [2020-01-31T10:03:48.369Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:48.369Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-31T10:03:48.369Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.369Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83585.sock
+[debug] [2020-01-31T10:03:48.369Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: BUSY
+[debug] [2020-01-31T10:03:48.370Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-01-31T10:03:48.370Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-31T10:03:48.370Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/chocoyama.JPG --> api
+[debug] [2020-01-31T10:03:48.449Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:48.449Z] [worker-pool] Adding worker with key api, total=5
+[debug] [2020-01-31T10:03:48.449Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.450Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83586.sock
+[debug] [2020-01-31T10:03:48.450Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: BUSY
+[debug] [2020-01-31T10:03:48.451Z] [work-queue] {"queueLength":1,"workRunningCount":5}
+[debug] [2020-01-31T10:03:48.451Z] [work-queue] {"queueLength":0,"workRunningCount":6}
+[debug] [2020-01-31T10:03:48.451Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-zig.png --> api
+[debug] [2020-01-31T10:03:48.459Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:03:48.460Z] [worker-pool] Adding worker with key api, total=6
+[debug] [2020-01-31T10:03:48.460Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:03:48.460Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83587.sock
+[debug] [2020-01-31T10:03:48.460Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: BUSY
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:48.462Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: IDLE
+[debug] [2020-01-31T10:03:48.463Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-31T10:03:49.196Z] [runtime-status] [83585] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:49.198Z] [runtime-status] [83585] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:49.200Z] [runtime-status] [83585] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:49.201Z] [runtime-status] [83585] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.201Z] [runtime-status] [83585] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.248Z] [runtime-status] [83584] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:49.250Z] [runtime-status] [83584] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:49.252Z] [runtime-status] [83584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:49.255Z] [runtime-status] [83584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.260Z] [runtime-status] [83586] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:49.262Z] [runtime-status] [83586] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:49.264Z] [runtime-status] [83586] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:49.265Z] [runtime-status] [83586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.266Z] [runtime-status] [83586] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.298Z] [runtime-status] [83584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.301Z] [runtime-status] [83583] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:49.313Z] [runtime-status] [83583] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:49.316Z] [runtime-status] [83583] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:49.325Z] [runtime-status] [83583] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.328Z] [runtime-status] [83583] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.364Z] [runtime-status] [83587] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:03:49.365Z] [runtime-status] [83587] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:03:49.367Z] [runtime-status] [83587] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:03:49.368Z] [runtime-status] [83587] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.374Z] [runtime-status] [83587] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:03:49.580Z] [runtime-status] [83585] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:49.582Z] [runtime-status] [83585] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:49.582Z] [runtime-status] [83585] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:49.587Z] [runtime-status] [83585] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83585.sock
+[debug] [2020-01-31T10:03:49.592Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:49.608Z] [runtime-status] [83585] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:49.612Z] [runtime-status] [83585] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:49.632Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: IDLE
+[debug] [2020-01-31T10:03:49.632Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:03:49.646Z] [runtime-status] [83584] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:49.650Z] [runtime-status] [83584] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:49.650Z] [runtime-status] [83584] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:49.662Z] [runtime-status] [83584] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83584.sock
+[debug] [2020-01-31T10:03:49.664Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:49.703Z] [runtime-status] [83584] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:49.707Z] [runtime-status] [83584] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:49.721Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: IDLE
+[debug] [2020-01-31T10:03:49.722Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:03:49.737Z] [runtime-status] [83586] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:49.738Z] [runtime-status] [83586] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:49.738Z] [runtime-status] [83586] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:49.747Z] [runtime-status] [83586] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83586.sock
+[debug] [2020-01-31T10:03:49.748Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:49.777Z] [runtime-status] [83586] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:49.782Z] [runtime-status] [83586] Ephemeral server survived.
+[debug] [2020-01-31T10:03:49.784Z] [runtime-status] [83587] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:49.785Z] [runtime-status] [83587] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:49.785Z] [runtime-status] [83587] Running api in mode HTTPS
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:49.800Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: IDLE
+[debug] [2020-01-31T10:03:49.800Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:03:49.801Z] [runtime-status] [83587] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83587.sock
+[debug] [2020-01-31T10:03:49.814Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:49.815Z] [runtime-status] [83583] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:03:49.816Z] [runtime-status] [83583] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:03:49.816Z] [runtime-status] [83583] Running api in mode HTTPS
+[debug] [2020-01-31T10:03:49.825Z] [runtime-status] [83583] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83583.sock
+[debug] [2020-01-31T10:03:49.825Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:03:49.849Z] [runtime-status] [83583] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:49.854Z] [runtime-status] [83583] Ephemeral server survived.
+[debug] [2020-01-31T10:03:49.864Z] [runtime-status] [83587] Ephemeral server handling GET request
+[debug] [2020-01-31T10:03:49.871Z] [runtime-status] [83587] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:49.887Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: IDLE
+[debug] [2020-01-31T10:03:49.887Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:03:49.895Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: IDLE
+[debug] [2020-01-31T10:03:49.895Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /bootstrap.min.css.map to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:04:10.614Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:04:10.614Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:04:10.614Z] Accepted request GET /myportfolio-20200130/us-central1/api/bootstrap.min.css.map --> api
+[debug] [2020-01-31T10:04:10.614Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:04:10.614Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:04:10.614Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: BUSY
+[debug] [2020-01-31T10:04:10.615Z] [runtime-status] [83582] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:04:10.616Z] [runtime-status] [83582] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:04:10.616Z] [runtime-status] [83582] Running api in mode HTTPS
+[debug] [2020-01-31T10:04:10.617Z] [runtime-status] [83582] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83582.sock
+[debug] [2020-01-31T10:04:10.619Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:04:10.622Z] [runtime-status] [83582] Ephemeral server handling GET request
+[debug] [2020-01-31T10:04:10.622Z] [runtime-status] [83582] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:04:10.626Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: IDLE
+[debug] [2020-01-31T10:04:10.627Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-31T10:12:40.461Z] File /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug changed, reloading triggers
+[debug] [2020-01-31T10:12:41.462Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T10:12:41.463Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: FINISHING
+[debug] [2020-01-31T10:12:41.463Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.463Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: FINISHING
+[debug] [2020-01-31T10:12:41.463Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.463Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: FINISHING
+[debug] [2020-01-31T10:12:41.463Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.463Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: FINISHING
+[debug] [2020-01-31T10:12:41.464Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.464Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: FINISHING
+[debug] [2020-01-31T10:12:41.464Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.464Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: FINISHING
+[debug] [2020-01-31T10:12:41.464Z] [worker-pool] Shutting down IDLE worker (api)
+[debug] [2020-01-31T10:12:41.464Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: FINISHING
+[debug] [2020-01-31T10:12:41.504Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T10:12:41.504Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T10:12:41.504Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T10:12:41.504Z] [worker-~diagnostic~-75d14c7d-c360-4fb1-8a82-8e81e69c8a9e]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83639.sock
+[debug] [2020-01-31T10:12:41.505Z] [worker-~diagnostic~-75d14c7d-c360-4fb1-8a82-8e81e69c8a9e]: BUSY
+[debug] [2020-01-31T10:12:41.520Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: exited
+[debug] [2020-01-31T10:12:41.520Z] [worker-~diagnostic~-5796b5ff-0379-4060-92f7-b25f8e469eaf]: FINISHED
+[debug] [2020-01-31T10:12:41.520Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: exited
+[debug] [2020-01-31T10:12:41.520Z] [worker-api-941eb168-9d21-4ecf-b71c-a0536113e589]: FINISHED
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: exited
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-dc6a2815-4883-4c24-a367-015dc0c0a8e4]: FINISHED
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: exited
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-80043d07-e9aa-4244-b4e2-42248371c4f6]: FINISHED
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: exited
+[debug] [2020-01-31T10:12:41.521Z] [worker-api-7c94c562-60a8-4283-887b-0a9beb872bd4]: FINISHED
+[debug] [2020-01-31T10:12:41.522Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: exited
+[debug] [2020-01-31T10:12:41.522Z] [worker-api-90e801e8-cf8d-421d-a714-5841c07cc7d5]: FINISHED
+[debug] [2020-01-31T10:12:41.522Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: exited
+[debug] [2020-01-31T10:12:41.522Z] [worker-api-1ef1a091-c7af-4aed-aa7b-f0db2de4fc89]: FINISHED
+[debug] [2020-01-31T10:12:42.523Z] [runtime-status] [83639] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:12:42.525Z] [runtime-status] [83639] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:12:42.531Z] [runtime-status] [83639] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:12:42.534Z] [runtime-status] [83639] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:42.535Z] [runtime-status] [83639] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:42.866Z] [worker-~diagnostic~-75d14c7d-c360-4fb1-8a82-8e81e69c8a9e]: IDLE
+[info] [hosting] Rewriting / to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:12:42.952Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:12:42.952Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:12:42.952Z] Accepted request GET /myportfolio-20200130/us-central1/api/ --> api
+[debug] [2020-01-31T10:12:42.952Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T10:12:42.952Z] [worker-pool] Cleaned up workers for api: 6 --> 0
+[debug] [2020-01-31T10:12:42.958Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:12:42.958Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-01-31T10:12:42.959Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:42.959Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:42.959Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: BUSY
+[debug] [2020-01-31T10:12:43.225Z] [runtime-status] [83647] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:12:43.227Z] [runtime-status] [83647] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:12:43.231Z] [runtime-status] [83647] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:12:43.234Z] [runtime-status] [83647] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:43.235Z] [runtime-status] [83647] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:43.332Z] [runtime-status] [83647] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:43.333Z] [runtime-status] [83647] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:43.333Z] [runtime-status] [83647] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:43.336Z] [runtime-status] [83647] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:43.339Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:43.350Z] [runtime-status] [83647] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:43.354Z] [runtime-status] [83647] Ephemeral server survived.
+[info] >  /Users/urayuma/portfolio/myPortfolio/functions/views/index.pug, line 133:
+[info] >  You should not have pug tags with multiple attributes.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:44.186Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: IDLE
+[debug] [2020-01-31T10:12:44.187Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /img/capi.jpeg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:12:44.300Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-31T10:12:44.300Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:12:44.301Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/capi.jpeg --> api
+[debug] [2020-01-31T10:12:44.301Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.301Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:44.301Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: BUSY
+[debug] [2020-01-31T10:12:44.302Z] [runtime-status] [83647] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:44.302Z] [runtime-status] [83647] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:44.302Z] [runtime-status] [83647] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:44.302Z] [runtime-status] [83647] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[info] [hosting] Rewriting /img/name-label.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:12:44.304Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:44.308Z] [runtime-status] [83647] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:44.308Z] [runtime-status] [83647] Ephemeral server survived.
+[debug] [2020-01-31T10:12:44.309Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:12:44.309Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:12:44.309Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-label.png --> api
+[debug] [2020-01-31T10:12:44.315Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:12:44.318Z] [worker-pool] Adding worker with key api, total=2
+[debug] [2020-01-31T10:12:44.318Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.318Z] [worker-api-80f098f1-b6b5-4a5b-9d41-e093a10c08a6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83648.sock
+[debug] [2020-01-31T10:12:44.318Z] [worker-api-80f098f1-b6b5-4a5b-9d41-e093a10c08a6]: BUSY
+[info] [hosting] Rewriting /img/name-zig.png to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:44.324Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: IDLE
+[debug] [2020-01-31T10:12:44.324Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] [hosting] Rewriting /img/port.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[info] [hosting] Rewriting /img/mori.jpg to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:12:44.330Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-31T10:12:44.330Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:12:44.330Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/name-zig.png --> api
+[debug] [2020-01-31T10:12:44.330Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.331Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:44.331Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: BUSY
+[debug] [2020-01-31T10:12:44.333Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-31T10:12:44.333Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:12:44.333Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/mori.jpg --> api
+[debug] [2020-01-31T10:12:44.356Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:12:44.356Z] [worker-pool] Adding worker with key api, total=3
+[debug] [2020-01-31T10:12:44.356Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.356Z] [worker-api-16f27c6a-4d6e-40da-b4d8-9a17cd68b7e4]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83649.sock
+[debug] [2020-01-31T10:12:44.357Z] [worker-api-16f27c6a-4d6e-40da-b4d8-9a17cd68b7e4]: BUSY
+[debug] [2020-01-31T10:12:44.358Z] [runtime-status] [83647] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:44.360Z] [runtime-status] [83647] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:44.360Z] [runtime-status] [83647] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:44.360Z] [runtime-status] [83647] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:44.362Z] [functions] Runtime ready! Sending request!
+[info] [hosting] Rewriting /img/chocoyama.JPG to http://localhost:5001/myportfolio-20200130/us-central1/api for local Function api
+[debug] [2020-01-31T10:12:44.371Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:12:44.371Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:12:44.371Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/port.jpg --> api
+[debug] [2020-01-31T10:12:44.414Z] [worker-pool] addWorker(api)
+[debug] [2020-01-31T10:12:44.414Z] [worker-pool] Adding worker with key api, total=4
+[debug] [2020-01-31T10:12:44.414Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.414Z] [worker-api-0972d674-0281-45b3-91bb-13f9b03f5a3f]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83650.sock
+[debug] [2020-01-31T10:12:44.414Z] [worker-api-0972d674-0281-45b3-91bb-13f9b03f5a3f]: BUSY
+[debug] [2020-01-31T10:12:44.415Z] [runtime-status] [83647] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:44.416Z] [runtime-status] [83647] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:44.427Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: IDLE
+[debug] [2020-01-31T10:12:44.428Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:12:44.438Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-31T10:12:44.438Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-31T10:12:44.438Z] Accepted request GET /myportfolio-20200130/us-central1/api/img/chocoyama.JPG --> api
+[debug] [2020-01-31T10:12:44.438Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-01-31T10:12:44.438Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: Assigning socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:44.438Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: BUSY
+[debug] [2020-01-31T10:12:44.440Z] [runtime-status] [83647] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:44.440Z] [runtime-status] [83647] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:44.440Z] [runtime-status] [83647] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:44.440Z] [runtime-status] [83647] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83647.sock
+[debug] [2020-01-31T10:12:44.443Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:44.450Z] [runtime-status] [83647] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:44.450Z] [runtime-status] [83647] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:44.455Z] [worker-api-ffbf2f81-a03b-4432-b741-a1e840f892a6]: IDLE
+[debug] [2020-01-31T10:12:44.455Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-31T10:12:44.869Z] [runtime-status] [83648] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:12:44.878Z] [runtime-status] [83648] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:12:44.883Z] [runtime-status] [83648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:12:44.884Z] [runtime-status] [83648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:44.886Z] [runtime-status] [83648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:44.940Z] [runtime-status] [83650] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:12:44.942Z] [runtime-status] [83650] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:12:44.945Z] [runtime-status] [83650] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:12:44.947Z] [runtime-status] [83650] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:44.949Z] [runtime-status] [83650] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:45.010Z] [runtime-status] [83649] Functions runtime initialized. {"cwd":"/Users/urayuma/portfolio/myPortfolio/functions","node_version":"12.14.0"}
+[debug] [2020-01-31T10:12:45.012Z] [runtime-status] [83649] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T10:12:45.072Z] [runtime-status] [83649] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T10:12:45.072Z] [runtime-status] [83649] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:45.072Z] [runtime-status] [83649] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/urayuma/portfolio/myPortfolio/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T10:12:45.135Z] [runtime-status] [83648] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:45.135Z] [runtime-status] [83648] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:45.136Z] [runtime-status] [83648] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:45.140Z] [runtime-status] [83648] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83648.sock
+[debug] [2020-01-31T10:12:45.143Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:45.159Z] [runtime-status] [83648] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:45.177Z] [runtime-status] [83648] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:45.197Z] [worker-api-80f098f1-b6b5-4a5b-9d41-e093a10c08a6]: IDLE
+[debug] [2020-01-31T10:12:45.197Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-31T10:12:45.212Z] [runtime-status] [83650] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:45.215Z] [runtime-status] [83650] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:45.216Z] [runtime-status] [83650] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:45.221Z] [runtime-status] [83650] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83650.sock
+[debug] [2020-01-31T10:12:45.225Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:45.248Z] [runtime-status] [83650] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:45.252Z] [runtime-status] [83650] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:45.269Z] [worker-api-0972d674-0281-45b3-91bb-13f9b03f5a3f]: IDLE
+[debug] [2020-01-31T10:12:45.269Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-31T10:12:45.280Z] [runtime-status] [83649] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-01-31T10:12:45.283Z] [runtime-status] [83649] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-01-31T10:12:45.283Z] [runtime-status] [83649] Running api in mode HTTPS
+[debug] [2020-01-31T10:12:45.288Z] [runtime-status] [83649] Attempting to listen to socketPath: /var/folders/9h/zy_wy8hj3951x_2bqvjp59zh0000gn/T/fire_emu_83649.sock
+[debug] [2020-01-31T10:12:45.291Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-31T10:12:45.311Z] [runtime-status] [83649] Ephemeral server handling GET request
+[debug] [2020-01-31T10:12:45.315Z] [runtime-status] [83649] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-01-31T10:12:45.329Z] [worker-api-16f27c6a-4d6e-40da-b4d8-9a17cd68b7e4]: IDLE
+[debug] [2020-01-31T10:12:45.330Z] [work-queue] {"queueLength":0,"workRunningCount":0}
