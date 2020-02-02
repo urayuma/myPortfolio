@@ -1,10 +1,11 @@
 var express = require("express");
 var app = express();
 
+
 app.use(express.static(__dirname));
 
 // View Engineにpugを指定。
-app.set('views', './src')
+app.set('views', './public')
 app.set('view engine', 'pug');
 
 /* 2. listen()メソッドを実行して3000番ポートで待ち受け。*/
